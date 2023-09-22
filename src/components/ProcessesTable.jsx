@@ -56,34 +56,34 @@ const ProcessesTable = () => {
 			<table className="min-w-full bg-white dark:bg-[#1C1C25] rounded-[15px]">
 				<thead>
 					<tr>
-						<th className="text-left px-2 py-2 sm:px-4 sm:py-3 text-[#5E6E78] dark:text-[#9CA3AF] text-sm sm:text-base">
+						<th className="text-left px-2 py-2 sm:px-4 sm:py-3 text-[#5E6E78] dark:text-[#CAF0F8] text-lg  ">
 							Username
 						</th>
-						<th className="text-left px-2 py-2 sm:px-4 sm:py-3 text-[#5E6E78] dark:text-[#9CA3AF] text-sm sm:text-base">
+						<th className="text-left px-2 py-2 sm:px-4 sm:py-3 text-[#5E6E78] dark:text-[#CAF0F8] text-lg ">
 							PID
 						</th>
-						<th className="text-left px-2 py-2 sm:px-4 sm:py-3 text-[#5E6E78] dark:text-[#9CA3AF] text-sm sm:text-base">
+						<th className="text-left px-2 py-2 sm:px-4 sm:py-3 text-[#5E6E78] dark:text-[#CAF0F8] text-lg ">
 							Name
 						</th>
-						<th className="text-left px-2 py-2 sm:px-4 sm:py-3 text-[#5E6E78] dark:text-[#9CA3AF] text-sm sm:text-base">
+						<th className="text-left px-2 py-2 sm:px-4 sm:py-3 text-[#5E6E78] dark:text-[#CAF0F8] text-lg ">
 							VMS
 						</th>
 					</tr>
 				</thead>
 				<tbody>
 					{processes.map((process, index) => (
-						<tr key={index}>
-							<td className="px-2 py-2 sm:px-4 sm:py-3 whitespace-nowrap overflow-ellipsis overflow-hidden max-w-[10rem]">
+						<tr key={index} className="text-sm font-medium">
+							<td className="px-2 py-2 sm:px-4 sm:py-3 whitespace-nowrap overflow-ellipsis overflow-hidden max-w-[10rem] dark:text-white">
 								{process.username}
 							</td>
-							<td className="px-2 py-2 sm:px-4 sm:py-3 whitespace-nowrap">
+							<td className="px-2 py-2 sm:px-4 sm:py-3 whitespace-nowrap dark:text-white">
 								{process.pid}
 							</td>
-							<td className="px-2 py-2 sm:px-4 sm:py-3 whitespace-nowrap overflow-ellipsis overflow-hidden max-w-[10rem]">
+							<td className="px-2 py-2 sm:px-4 sm:py-3 whitespace-nowrap overflow-ellipsis overflow-hidden max-w-[10rem] dark:text-white">
 								{process.name}
 							</td>
-							<td className="flex justify-between  px-2 py-2 sm:px-4 sm:py-3 whitespace-nowrap">
-								 {process.vms} {arrowIcons[index]}
+							<td className="flex justify-between  px-2 py-2 sm:px-4 sm:py-3 whitespace-nowrap dark:text-white">
+								{process.vms}
 							</td>
 						</tr>
 					))}

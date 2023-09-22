@@ -34,7 +34,7 @@ const BootTimeTable = () => {
 				{loading ? (
 					<p>Loading...</p>
 				) : (
-					<div className="bg-gray-100 p-2 rounded-lg w-full flex items-center justify-center">
+					<div className="bg-neutral-200 dark:bg-gray-100 p-2 rounded-lg w-full flex items-center justify-center">
 						<div className="text-md text-center font-medium ">{bootTime}</div>
 					</div>
 				)}

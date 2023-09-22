@@ -7,8 +7,8 @@ import {FcProcess} from "react-icons/fc"
 export const dashboardToSettingsData = [
 	{
     id: "System",
-    icon: <GrSystem />,
-    inactiveIcon: <GrSystem />,
+    icon: <GrSystem className="text-white" />,
+    inactiveIcon: <GrSystem className="text-white" />,
     link: "/",
     text: "System",
   },

@@ -32,28 +32,30 @@ const DirectoryStructure = () => {
 
   return (
     <div>
-      <h2 className="text-2xl font-semibold mb-4">Directory Structure</h2>
+      <p className="text-[#000000] dark:bg-[#2D2D2D] dark:text-white dark:shadow-sm dark:shadow-[#90E0EF] text-[20px] font-semibold leading-[28px] shadow-sm bg-white shadow-[#00B4D8] py-2 px-4 w-full rounded-md mb-6">
+				Directory Structure
+			</p>
       {loading ? (
         <p>Loading...</p>
       ) : (
         <table className="table-auto w-full border-collapse border border-gray-300">
           <thead>
             <tr>
-              <th className="border border-gray-300 p-2">File Name</th>
-              <th className="border border-gray-300 p-2">File Size</th>
+              <th className="border-2 border-[#00B4D8] px-4 py-2 dark:text-white ">File Name</th>
+              <th className="border-2 border-[#00B4D8] px-4 py-2 dark:text-white ">File Size</th>
             </tr>
           </thead>
           <tbody>
             {Object.entries(directoryData).map(([fileName, fileSize]) => (
               <tr key={fileName}>
-                <td className="border border-gray-300 p-2">{fileName}</td>
-                <td className="border border-gray-300 p-2">
+                <td className="border border-[#0077B6] dark:border-[#90E0EF] px-4 py-2 dark:text-white">{fileName}</td>
+                <td className="border border-[#0077B6] dark:border-[#90E0EF] px-4 py-2 dark:text-white">
                   {formatFileSize(fileSize)}
                 </td>
               </tr>
             ))}
           </tbody>
-          <tfoot>
+          {/* <tfoot>
             <tr>
               <td className="border border-gray-300 p-2 font-semibold">
                 Total
@@ -62,7 +64,7 @@ const DirectoryStructure = () => {
                 {formatFileSize(directoryData["Total"])}
               </td>
             </tr>
-          </tfoot>
+          </tfoot> */}
         </table>
       )}
     </div>
