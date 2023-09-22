@@ -39,8 +39,8 @@ const NetworkInterfaceTable = () => {
             <th className="px-4 py-2">Interface</th>
             <th className="px-4 py-2">Download</th>
             <th className="px-4 py-2">Upload</th>
-            <th className="px-4 py-2">Upload Speed</th>
-            <th className="px-4 py-2">Download Speed</th>
+            {/* <th className="px-4 py-2">Upload Speed</th>
+            <th className="px-4 py-2">Download Speed</th> */}
           </tr>
         </thead>
         <tbody>
@@ -49,8 +49,8 @@ const NetworkInterfaceTable = () => {
               <td className="border px-4 py-2">{networkData[ifaceKey]["iface"]}</td>
               <td className="border px-4 py-2">{networkData[ifaceKey]["Download"]}</td>
               <td className="border px-4 py-2">{networkData[ifaceKey]["Upload"]}</td>
-              <td className="border px-4 py-2">{networkData[ifaceKey]["Upload Speed"]}</td>
-              <td className="border px-4 py-2">{networkData[ifaceKey]["Download Speed"]}</td>
+              {/* <td className="border px-4 py-2">{networkData[ifaceKey]["Upload Speed"]}</td>
+              <td className="border px-4 py-2">{networkData[ifaceKey]["Download Speed"]}</td> */}
             </tr>
           ))}
         </tbody>

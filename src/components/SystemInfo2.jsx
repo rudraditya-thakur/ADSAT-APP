@@ -25,33 +25,16 @@ const SystemInfo = () => {
 
   return (
     <div>
-      <div className="flex justify-between items-center">
-        <p className="text-[#000000] dark:text-[#FFF] text-[20px] font-semibold leading-[28px]">
-          System Info
-        </p>
-      </div>
-      <div className="mt-4">
+      <div className="bg-white dark:bg-[#1C1C25] rounded-[15px] py-[21px] px-[30px] w-full min-[1120px]:w-auto">
         {loading ? (
           <p>Loading...</p>
         ) : (
           <ul>
             <li>
-              <strong>System:</strong> {systemInfo.System}
-            </li>
-            <li>
-              <strong>Node Name:</strong> {systemInfo["Node Name"]}
-            </li>
-            <li>
               <strong>Release:</strong> {systemInfo.Release}
             </li>
             <li>
               <strong>Version:</strong> {systemInfo.Version}
-            </li>
-            <li>
-              <strong>Machine:</strong> {systemInfo.Machine}
-            </li>
-            <li>
-              <strong>Processor:</strong> {systemInfo.Processor}
             </li>
           </ul>
         )}

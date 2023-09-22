@@ -15,12 +15,6 @@ export default function Navbar({ showSidebar, setShowSidebar }) {
       </svg>
     </div>
 );
-  const menuItems = [
-    { label: 'My Account', href: 'javascript:void(0)', image: user },
-    { label: 'Admin Panel', href: 'javascript:void(0)', image: adminIcon },
-    { label: 'Vendor Panel', href: 'javascript:void(0)', image: adminIcon },
-    { label: 'Logout', href: 'javascript:void(0)', image: logout },
-];
 
   return (
     <nav className="dark:bg-[#1C1C25] md:ml-[19.2rem] py-[19.5px] pl-[39px] pr-[37px]">
@@ -72,25 +66,11 @@ export default function Navbar({ showSidebar, setShowSidebar }) {
         <div className="flex justify-between items-center w-full gap-5 flex-col lg:flex-row">
           <div className="flex">
             <form className="2xl:w-[626px]">
-              <InputField />
+              {/* <InputField /> */}
             </form>
           </div>
           <div className="flex items-center gap-4">
               <Switcher />
-              <div className="flex relative items-center justify-between px-5 py-[7px] rounded-[12px] bg-[#F2F8FF] dark:bg-[#131313] w-[256px]">
-                <div className="flex gap-2.5 items-center">
-                  <div className="w-[45px] h-[45px]">
-                    <img className="w-full rounded-full object-cover" src={ProfilePic} alt="ProfilePic" />
-                  </div>
-                  <div>
-                    <p className="text-[13px]  font-medium text-[#1F1F1F] dark:text-[#E0E0E0]">Andy Warhol</p>
-                    <p className="text-[11px]  font-medium text-[#5E6E78]">andywarhol@mail.com</p>
-                  </div>
-                </div>
-                <div className="cursor-pointer">
-                    <CustomDropdown buttonContent={buttonContent} menuItems={menuItems} />
-                </div>
-              </div>
           </div>
         </div>
       </div>
