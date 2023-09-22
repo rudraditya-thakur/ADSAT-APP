@@ -25,11 +25,11 @@ const SystemInfo = () => {
 
   return (
     <div>
-      <div className="bg-white dark:bg-[#1C1C25] rounded-[15px] py-[21px] px-[30px] w-full min-[1120px]:w-auto">
+      <div className="bg-white dark:bg-[#1C1C25] rounded-[15px] py-[21px] px-[30px] w-full min-[1120px]:w-auto shadow-md shadow-[#90E0EF] dark:shadow-sm dark:shadow-[#90E0EF]">
         {loading ? (
           <p>Loading...</p>
         ) : (
-          <ul>
+          <ul className="dark:text-white">
             <li>
               <strong>System:</strong> {systemInfo.System}
             </li>

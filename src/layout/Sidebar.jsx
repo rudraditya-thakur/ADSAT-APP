@@ -13,11 +13,11 @@ export default function Sidebar() {
     <>
       <Navbar showSidebar={showSidebar} setShowSidebar={setShowSidebar} />
       <div
-        className={`h-screen fixed top-0 md:left-0 ${showSidebar} overflow-y-auto flex-row flex-nowrap overflow-hidden dark:bg-[#1C1C25] border-r border-[#DEE5EC] dark:border-[#202128] bg-white w-[15.2rem] z-10 py-4 px-[30px] max-[768px]:transition-all max-[768px]:duration-300`}
+        className={`h-screen fixed top-0 md:left-0 ${showSidebar} overflow-y-auto flex-row flex-nowrap overflow-hidden dark:bg-[#1C1C25] border-r border-[#DEE5EC] dark:border-[#CAF0F8] bg-[#90E0EF] w-[15.2rem] z-10 py-4 px-[30px] max-[768px]:transition-all max-[768px]:duration-300`}
       >
         <div className="flex-col items-stretch min-h-full flex-nowrap px-0 relative">
           <NavLink to="/" className="mt-[26px] text-center w-full inline-block">
-            <p className="text-3xl font-bold drop-shadow-lg">AD<span className="text-blue-600">SAT</span></p>
+            <p className="text-3xl font-bold drop-shadow-lg dark:text-white">AD<span className="text-blue-600">SAT</span></p>
           </NavLink>
 
           <div className="flex flex-col">
@@ -30,7 +30,7 @@ export default function Sidebar() {
                       exact={`${exact}`}
                       className={({ isActive }) => `
                       flex items-center gap-[14px] text-[18px] leading-[21px] font-medium px-[29px] py-[14px] rounded-lg
-                      ${isActive ? "bg-[#D5E6FB] dark:bg-[#062141] text-[#0060FF] dark:text-white" : "text-[#000000] dark:text-white"}
+                      ${isActive ? "bg-[#D5E6FB] dark:bg-[#468FAF] text-[#0060FF] dark:text-white" : "text-[#000000] dark:text-white"}
                     `}
                     >
                       {({ isActive }) => (

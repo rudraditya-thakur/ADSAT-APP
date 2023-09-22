@@ -51,7 +51,7 @@ const DiskInfo = () => {
 
 	return (
 		<div className="w-full">
-			<p className="text-[#000000] dark:text-[#FFF] text-[20px] font-semibold leading-[28px]">
+			<p className="text-[#000000] dark:bg-[#2D2D2D] dark:text-white dark:shadow-sm dark:shadow-[#90E0EF] text-[20px] font-semibold leading-[28px] shadow-sm bg-white shadow-[#00B4D8] py-2 px-4 w-fit rounded-md">
 				Disk Information
 			</p>
 			<div className="mt-4 flex flex-wrap -mx-2">
@@ -70,7 +70,7 @@ const DiskInfo = () => {
 									datasets: [
 										{
 											data: [used, free],
-											backgroundColor: ["#FF5733", "#00FF33"],
+											backgroundColor: ["#572cf9", "#1f96fa"],
 										},
 									],
 								};
@@ -85,24 +85,24 @@ const DiskInfo = () => {
 								};
 
 								return (
-									<div key={index} className="w-full mb-2 ">
-										<div className="bg-white dark:bg-[#2D2D2D] shadow-md rounded-lg p-2 flex items-center">
+									<div key={index} className="w-full mb-4 ">
+										<div className="bg-white dark:bg-[#2D2D2D] shadow-md shadow-[#CAF0F8] dark:shadow-sm dark:shadow-[#90E0EF] rounded-lg p-2 flex items-center ">
 											<div className="mr-4 w-1/2 mx-auto">
 												{/* Left side for disk details */}
-                        <div className="w-1/2 mx-auto">
-												<p className="text-[#000000] dark:text-[#FFF] text-[18px] font-semibold leading-[24px] ">
-													{device["Device"]}
-												</p>
-												<p className="text-[#5E6E78] dark:text-[#9CA3AF] text-[14px] leading-[22px]">
-													Mountpoint: {device["Mountpoint"]}
-												</p>
-												<p className="text-[#5E6E78] dark:text-[#9CA3AF] text-[14px] leading-[22px]">
-													File System Type: {device["File system type"]}
-												</p>
-												<p className="text-[#5E6E78] dark:text-[#9CA3AF] text-[14px] leading-[22px]">
-													Total Size: {device["Total Size"]}
-												</p>
-                        </div>
+												<div className="w-1/2 mx-auto">
+													<p className="text-[#000000] dark:text-[#FFF] text-lg font-bold leading-[24px] ">
+														{device["Device"]}
+													</p>
+													<p className="text-[#5E6E78] dark:text-[#9CA3AF] text-md leading-[22px]">
+														Mountpoint: {device["Mountpoint"]}
+													</p>
+													<p className="text-[#5E6E78] dark:text-[#9CA3AF] text-md leading-[22px]">
+														File System Type: {device["File system type"]}
+													</p>
+													<p className="text-[#5E6E78] dark:text-[#9CA3AF] text-md leading-[22px]">
+														Total Size: {device["Total Size"]}
+													</p>
+												</div>
 											</div>
 											<div>
 												{/* Right side for Doughnut chart */}

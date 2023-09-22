@@ -47,7 +47,7 @@ const MemoryInfoChart = () => {
 		datasets: [
 			{
 				data: [virtualMemoryUsed, virtualMemoryAvailable],
-				backgroundColor: ["#FF4136", "#00DC57"],
+				backgroundColor: ["#572cf9", "#1f96fa"],
 			},
 		],
 	};
@@ -58,7 +58,7 @@ const MemoryInfoChart = () => {
 		datasets: [
 			{
 				data: [swapUsed, swapFree],
-				backgroundColor: ["#FF4136", "#00DC57"],
+				backgroundColor: ["#572cf9", "#1f96fa"],
 			},
 		],
 	};
@@ -96,15 +96,15 @@ const MemoryInfoChart = () => {
 			{loading ? (
 				<p>Loading memory info...</p>
 			) : (
-				<div style={{ display: "flex", justifyContent: "space-between" }}>
-					<div className="bg-white dark:bg-[#2D2D2D] shadow-md p-4 rounded-lg">
-						<h2 className="text-[#000000] dark:text-[#FFF] text-[20px] font-semibold leading-[28px] mb-4 p-2 w-fit rounded-lg shadow-md ">
+				<div className="gap-4" style={{ display: "flex", justifyContent: "space-between" }}>
+					<div className="bg-white dark:bg-[#2D2D2D] shadow-xl p-4 rounded-lg dark:shadow-sm dark:shadow-[#90E0EF]">
+						<h2 className="text-[#000000] dark:bg-[#2D2D2D] dark:text-white dark:shadow-sm dark:shadow-[#90E0EF] text-[20px] font-semibold leading-[28px] mb-4 p-2 w-fit rounded-lg shadow-md bg-[#CAF0F8] shadow-[#00B4D8]">
 							Virtual Memory
 						</h2>
 						<Doughnut data={virtualMemoryData} options={options} />
 					</div>
-					<div className="bg-white dark:bg-[#2D2D2D] shadow-md p-4 rounded-lg">
-						<h2 className="text-[#000000] dark:text-[#FFF] text-[20px] font-semibold leading-[28px] mb-4 p-2 w-fit rounded-lg shadow-md ">
+					<div className="bg-white dark:bg-[#2D2D2D] shadow-xl p-4 rounded-lg dark:shadow-sm dark:shadow-[#90E0EF]">
+						<h2 className="text-[#000000] dark:bg-[#2D2D2D] dark:text-white dark:shadow-sm dark:shadow-[#90E0EF]  text-[20px] font-semibold leading-[28px] mb-4 p-2 w-fit rounded-lg shadow-md bg-[#CAF0F8] shadow-[#00B4D8]">
 							Swap
 						</h2>
 						<Doughnut data={swapData} options={options} />
