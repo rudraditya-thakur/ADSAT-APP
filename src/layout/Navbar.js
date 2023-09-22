@@ -15,12 +15,6 @@ export default function Navbar({ showSidebar, setShowSidebar }) {
       </svg>
     </div>
 );
-  const menuItems = [
-    { label: 'My Account', href: 'javascript:void(0)', image: user },
-    { label: 'Admin Panel', href: 'javascript:void(0)', image: adminIcon },
-    { label: 'Vendor Panel', href: 'javascript:void(0)', image: adminIcon },
-    { label: 'Logout', href: 'javascript:void(0)', image: logout },
-];
 
   return (
     <nav className="dark:bg-[#1C1C25] md:ml-[19.2rem] py-[19.5px] pl-[39px] pr-[37px]">
