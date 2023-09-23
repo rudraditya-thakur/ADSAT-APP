@@ -64,7 +64,8 @@ export default function Navbar({ showSidebar, setShowSidebar }) {
         </div>
 
         <div className="flex justify-between items-center w-full gap-5 flex-col lg:flex-row">
-          <div className="flex">
+          <div className="flex justify-center w-full">
+            <p className="text-center bg-gradient-to-r from-violet-600  to-red-600 bg-clip-text text-transparent text-xl font-bold ">Unlocking Anomaly Detection: Your Key to Seamless Security Assurance</p>
           </div>
           <div className="flex items-center gap-4">
               <Switcher />

@@ -3,7 +3,7 @@ import { GrSystem } from "react-icons/gr";
 import {TbNetwork} from "react-icons/tb";
 import {GoFileDirectoryFill} from "react-icons/go";
 import {FcProcess} from "react-icons/fc"
-
+import {AiFillFolderOpen} from "react-icons/ai"
 export const dashboardToSettingsData = [
 	{
     id: "System",
@@ -32,5 +32,12 @@ export const dashboardToSettingsData = [
     inactiveIcon: <FcProcess />,
     link: "./process",
     text: "Process",
+  },
+  {
+    id: "systemfiles",
+    icon: <AiFillFolderOpen />,
+    inactiveIcon: <AiFillFolderOpen />,
+    link: "./systemfiles",
+    text: "System Files",
   },
 ];

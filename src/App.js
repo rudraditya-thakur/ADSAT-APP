@@ -4,6 +4,7 @@ import Dashboard from "./pages/Dashboard";
 import Network from "./pages/Network";
 import DirectoryPage from "./pages/Directory"
 import Process from "./pages/Process"
+import MalwarePage from "./pages/MalwareDetect";
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
               <Route exact path="/network" element={<Network />} />
               <Route exact path="/directory" element={<DirectoryPage />} />
               <Route exact path="/process" element={<Process />} />
+              <Route exact path="/systemfiles" element={<MalwarePage />} />
           </Routes>
       </div>
     </div>
