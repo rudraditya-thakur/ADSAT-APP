@@ -9,6 +9,7 @@ import CpuInfo1 from "../components/Cpuinfo1";
 import CpuInfo2 from "../components/Cpuinfo2";
 import MemoryInfoChart from "../components/MemInfo";
 import DiskInfo from "../components/DiskInfo";
+import AppWs from "../components/WebSocketView";
 
 
 function Dashboard() {

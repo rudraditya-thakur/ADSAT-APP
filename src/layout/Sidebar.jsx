@@ -16,12 +16,13 @@ export default function Sidebar() {
         className={`h-screen fixed top-0 md:left-0 ${showSidebar} overflow-y-auto flex-row flex-nowrap overflow-hidden dark:bg-[#1C1C25] border-r border-[#DEE5EC] dark:border-[#CAF0F8] bg-[#90E0EF] w-[15.2rem] z-10 py-4 px-[30px] max-[768px]:transition-all max-[768px]:duration-300`}
       >
         <div className="flex-col items-stretch min-h-full flex-nowrap px-0 relative">
-          <NavLink to="/" className="mt-[26px] text-center w-full inline-block">
-            <p className="text-3xl font-bold drop-shadow-lg dark:text-white">AD<span className="text-blue-600">SAT</span></p>
+          <NavLink to="/" className="mt-[20px] text-center w-full inline-block">
+            {/* <p className="text-3xl font-bold drop-shadow-lg dark:text-white">AD<span className="text-blue-600">SAT</span></p> */}
+            <img src="/download-removebg-preview.png" alt="" />
           </NavLink>
 
           <div className="flex flex-col">
-            <ul className="flex-col min-w-full flex gap-4 list-none mt-[71px]">
+            <ul className="flex-col min-w-full flex gap-2 list-none mt-[30px]">
               {dashboardToSettingsData.map(
                 ({ id, icon, inactiveIcon, link, text, exact }) => (
                   <li key={id} className="rounded-lg">
@@ -66,8 +67,6 @@ export default function Sidebar() {
                   />
                 </svg>
               </div>
-
-              
 
               
             </ul>
